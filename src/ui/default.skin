@@ -1,0 +1,720 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Skin name="Lingou默认皮肤">
+    <Author>
+        <Name>韦体东</Name>
+        <Email>weitidong220@163.com</Email>
+        <Url></Url>
+        <Version>0.1</Version>
+        <Comment>标准测试版</Comment>       
+    </Author>
+    
+    <Components>
+        <AllElements>
+            <Css>
+            <![CDATA[
+ QMenu {
+border: 1px dashed red;color:#4C618F;
+     background-color: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,stop: 0  #EFEFEF,stop: 0.4 #F5F5F5,stop: 0.5 #F6F6F6, stop: 1 #FcFcFc);
+ }
+
+ QMenu::item {
+     /* sets background of menu item. set this to something non-transparent
+         if you want menu color and menu item color to be different */
+     background-color: transparent;
+ }
+
+ QMenu::item:selected { /* when user selects item using mouse or keyboard */
+     background-color: qlineargradient(x1: 0, y1: 0, x2: 0.5, y2: 0.5,
+                                                         stop: 0  #D7EEFD,stop: 0.5 #CDE8FC, stop: 1 #BDDDFB);
+ }
+
+
+
+
+
+  QScrollBar:vertical {
+      border: 2px solid grey;
+      background: #32CC99;
+        background-image: url(images/scrollbarbg.bmp);
+      width: 15px;
+      margin: 22px 0 22px 0;
+  }
+  QScrollBar::handle:vertical {
+      background-image: url(images/btnScrollBarSlider_0_0.bmp);
+      min-height: 20px;
+    margin:0 0 0 -4px;
+  }
+  QScrollBar::handle:vertical:hover {
+      background-image: url(images/btnScrollBarSlider_2_0.bmp);
+      min-height: 20px;
+  }
+  QScrollBar::handle:vertical:pressed {
+      background-image: url(images/btnScrollBarSlider_1_0.bmp);
+      min-height: 20px;
+  }
+  QScrollBar::add-line:vertical {
+      border: 2px solid grey;
+      background: #32CC99;
+      height: 20px;
+      subcontrol-position: bottom;
+      subcontrol-origin: margin;
+    background-image:url(images/scrollbar_bar.bmp);
+  }
+
+  QScrollBar::sub-line:vertical {
+      border: 2px solid grey;
+      background: #32CC99;
+      height: 20px;
+      subcontrol-position: top;
+      subcontrol-origin: margin;
+background-image:url(images/scrollbar_bar.bmp);
+  }
+  QScrollBar::up-arrow:vertical, QScrollBar::down-arrow:vertical {
+      border: 2px solid grey;
+      width: 3px;
+      height: 3px;
+      background: white;
+  }
+
+  QScrollBar::add-page:vertical, QScrollBar::sub-page:vertical {
+      background: none;
+  }
+ 
+
+
+
+
+
+  QScrollBar:horizontal {
+      border: 2px solid grey;
+      background: #32CC99;
+      background-image: url(images/scrollbarbgH.bmp);
+      height: 15px;
+      margin: 0px 22px 0px 22px;
+  }
+  QScrollBar::handle:horizontal {
+      background-image: url(images/btnScrollBarSliderH_0_0.bmp);
+
+    margin:-4px 0px 0px 0px ;
+  }
+  QScrollBar::handle:horizontal:hover {
+      background-image: url(images/btnScrollBarSliderH_0_2.bmp);
+
+
+    margin:-4px 0px 0px 0px ;
+  }
+  QScrollBar::handle:horizontal:pressed {
+      background-image: url(images/btnScrollBarSliderH_0_1.bmp);
+      
+  }
+  QScrollBar::add-line:horizontal {
+      border: 2px solid grey;
+      background: #32CC99;
+      width: 20px;
+      subcontrol-position: right;
+      subcontrol-origin: margin;
+     background-image:url(images/scrollbar_bar.bmp);
+  }
+
+  QScrollBar::sub-line:horizontal {
+      border: 2px solid grey;
+      background: #32CC99;
+      width: 20px;
+      subcontrol-position: left;
+      subcontrol-origin: margin;
+    background-image:url(images/scrollbar_bar.bmp);
+  }
+  QScrollBar::left-arrow:horizontal, QScrollBar::right-arrow:horizontal {
+      border: 2px solid grey;
+      width: 3px;
+      height: 3px;
+      background: white;
+  }
+
+  QScrollBar::add-page:horizontal, QScrollBar::sub-page:horizontal {
+      background: none;
+  }
+
+             ]]>
+            </Css>
+        </AllElements>
+        <Buttons>
+            <Play name="BtnPlay" x="4" y="117" width="28" height="27" disable="0" hidden="0">                    
+                <Css>
+                    <![CDATA[
+                    #BtnPlay
+                    {
+                        border: none;
+                        background-image:url(images/btn-play-normal.bmp);
+                    }
+                    #BtnPlay:hover
+                    {
+                        background-image:url(images/btn-play-hover.bmp);
+                    }
+                    #BtnPlay:pressed
+                    {
+                        background-image:url(images/btn-play-press.bmp);
+                    }
+                    ]]>
+                </Css>
+                <ToolTip>
+                    <![CDATA[播放]]>
+                </ToolTip>
+            </Play>
+            <Pause name="BtnPause" x="4" y="117" width="28" height="27" disable="0" hidden="0">                    
+                <Css>
+                    <![CDATA[
+                    #BtnPause
+                    {
+                        border: none;
+                        background-image:url(images/btn-pause-normal.bmp);
+                    }
+                    #BtnPause:hover
+                    {
+                        background-image:url(images/btn-pause-hover.bmp);
+                    }
+                    #BtnPause:pressed
+                    {
+                        background-image:url(images/btn-pause-press.bmp);
+                    }
+                    ]]>
+                </Css>
+                <ToolTip>
+                    <![CDATA[暂停]]>
+                </ToolTip>
+            </Pause>
+            <Stop name="BtnStop" x="31" y="117" width="26" height="27" disable="0" hidden="0">                    
+                <Css>
+                    <![CDATA[
+                    #BtnStop
+                    {
+                        border: none;
+                        background-image:url(images/btn-stop-normal.bmp);
+                    }
+                    #BtnStop:hover
+                    {
+                        background-image:url(images/btn-stop-hover.bmp);
+                    }
+                    #BtnStop:pressed
+                    {
+                        background-image:url(images/btn-stop-press.bmp);
+                    }
+                    ]]>
+                </Css>
+                <ToolTip>
+                    <![CDATA[停止]]>
+                </ToolTip>
+            </Stop>
+            <Open name="BtnOpen" x="56" y="117" width="28" height="27" disable="0" hidden="0">                    
+                <Css>
+                    <![CDATA[
+                    #BtnOpen
+                    {
+                        border: none;                            
+                        background-image:url(images/btn-open-normal.bmp);
+                    }
+                    #BtnOpen:hover
+                    {
+                        background-image:url(images/btn-open-hover.bmp);
+                    }
+                    #BtnOpen:pressed
+                    {
+                        background-image:url(images/btn-open-press.bmp);
+                    }
+                    ]]>
+                </Css>
+                <ToolTip>
+                    <![CDATA[打开音乐文件]]>
+                </ToolTip>
+            </Open>
+            <Prev name="BtnPrev" x="90" y="117" width="28" height="27" disable="0" hidden="0">                    
+                <Css>
+                    <![CDATA[
+                    #BtnPrev
+                    {
+                        border: none;
+                        background-image:url(images/btn-prev-normal.bmp);
+                    }
+                    #BtnPrev:hover
+                    {
+                        border: none;
+                        background-image:url(images/btn-prev-hover.bmp);
+                    }
+                    #BtnPrev:pressed
+                    {
+                        border: none;
+                        background-image:url(images/btn-prev-press.bmp);
+                    }
+                    ]]>
+                </Css>
+                <ToolTip>
+                    <![CDATA[播放前一首]]>
+                </ToolTip>
+            </Prev>
+            <Next name="BtnNext" x="117" y="117" width="28" height="27" disable="0" hidden="0">                    
+                <Css>
+                    <![CDATA[
+                    #BtnNext
+                    {
+                        border: none;
+                        background-image:url(images/btn-next-normal.bmp);
+                    }
+                    #BtnNext:hover
+                    {
+                        border: none;
+                        background-image:url(images/btn-next-hover.bmp);
+                    }
+                    #BtnNext:pressed
+                    {
+                        border: none;
+                        background-image:url(images/btn-next-press.bmp);
+                    }
+                    ]]>
+                </Css>
+                <!--<Mask>images/btn-next-mask.bmp</Mask>-->
+                <ToolTip>
+                    <![CDATA[播放下一首]]>
+                </ToolTip>
+            </Next>
+            <Lyric name="BtnLyric" x="212" y="117" width="40" height="27" disable="0" hidden="0" >                    
+                <Css>
+                    <![CDATA[
+                    #BtnLyric
+                    {
+                        border: none;
+                        background-image:url(images/btn-lyric-normal.bmp);
+                    }
+                    #BtnLyric:hover
+                    {
+                        border: none;
+                        background-image:url(images/btn-lyric-hover.bmp);
+                    }
+                    #BtnLyric:pressed
+                    {
+                        border: none;
+                        background-image:url(images/btn-lyric-press.bmp);
+                    }
+                    ]]>
+                </Css>
+                <ToolTip>
+                    <![CDATA[显示歌词]]>
+                </ToolTip>
+            </Lyric>
+            <Music name="BtnMusic" x="252" y="117" width="40" height="27" disable="0" hidden="0"> 
+                <Css>
+                    <![CDATA[
+                    #BtnMusic
+                    {
+                       border: none; background-image:url(images/btn-music-normal.bmp);
+                    }
+                    #BtnMusic:hover
+                    {
+                        border: none;
+                        background-image:url(images/btn-music-hover.bmp);
+                    }
+                    #BtnMusic:pressed
+                    {
+                        border: none;
+                        background-image:url(images/btn-music-press.bmp);
+                    }
+                    ]]>
+                </Css>
+                <ToolTip>
+                    <![CDATA[显示音乐面板]]>
+                </ToolTip>
+            </Music>
+            <Mute name="BtnMute" x="209" y="93" width="12" height="12" disable="0" hidden="0" >
+                <Css>
+                    <![CDATA[ 
+                    #BtnMute
+                    {
+                        border: none;
+                        background-image:url(images/btn-mute-normal.bmp);
+                    }
+                    #BtnMute:hover
+                    {
+                        border: none;
+                        background-image:url(images/btn-mute-hover.bmp);
+                    }
+                    #BtnMute:pressed
+                    {
+                        border: none;
+                        background-image:url(images/btn-mute-press.bmp);
+                    }
+                    ]]>
+                </Css>
+                <ToolTip>
+                    <![CDATA[静音]]>
+                </ToolTip>
+            </Mute>
+            <Singer name="BtnSinger" x="14" y="32" width="42" height="42" disable="0" hidden="0">                    
+                <Css>
+                    <![CDATA[
+                    #BtnSinger
+                    {
+                        border: none;
+                        background-image:url(images/signer_normal.jpg);                        
+                    }
+                    #BtnSinger:hover
+                    {
+                        border: none;
+                    }
+                    #BtnSinger:pressed
+                    {
+                        border: none;
+                    }
+                    ]]>
+                </Css>
+                <ToolTip>
+                    <![CDATA[歌手图片]]>
+                </ToolTip>
+            </Singer>
+            <Minimize name="BtnMinimize" x="246" y="6" width="17" height="13" disable="0" hidden="0">                    
+                <Css>
+                    <![CDATA[
+                    #BtnMinimize
+                    {
+                        border: none;
+                        background-image:url(images/btnminiminimize_0_0.bmp);
+                    }
+                    #BtnMinimize:hover
+                    {
+                        border: none;
+                        background-image:url(images/btnminiminimize_1_0.bmp);
+                    }
+                    #BtnMinimize:pressed
+                    {
+                        border: none;
+                        background-image:url(images/btnminiminimize_2_0.bmp);
+                    }
+                    ]]>
+                </Css>
+                <ToolTip>
+                    <![CDATA[最小化]]>
+                </ToolTip>
+                <MaskImage maskColor="#FF00FF" maskOut="0">images/btnminiminimize_2_0.bmp</MaskImage>
+            </Minimize>
+            <Minimode name="BtnMinimode" x="263" y="6" width="17" height="13" disable="0" hidden="0">                    
+                <Css>
+                    <![CDATA[
+                    #BtnMinimode
+                    {
+                        border: none;
+                        background-image:url(images/btn-minimode-normal.bmp);
+                    }
+                    #BtnMinimode:hover
+                    {
+                        border: none;
+                        background-image:url(images/btn-minimode-hover.bmp);
+                    }
+                    #BtnMinimode:pressed
+                    {
+                        border: none;
+                        background-image:url(images/btn-minimode-press.bmp);
+                    }
+                    ]]>
+                </Css>
+                <ToolTip>
+                    <![CDATA[迷你模式]]>
+                </ToolTip>
+                <MaskImage maskColor="#FF00FF" maskOut="0">images/btn-minimode-normal.bmp</MaskImage>
+            </Minimode>
+            <Exit name="BtnExit" x="280" y="6" width="17" height="13" disable="0" hidden="0">                    
+                <Css>
+                    <![CDATA[
+                    #BtnExit
+                    {
+                        border: none;
+                        background-image:url(images/btnclosemsg_0_0.bmp);
+                    }
+                    #BtnExit:hover
+                    {
+                        border: none;
+                        background-image:url(images/btnclosemsg_1_0.bmp);
+                    }
+                    #BtnExit:pressed
+                    {
+                        background-image:url(images/btnclosemsg_2_0.bmp);
+                    }
+                    ]]>
+                </Css>
+                <ToolTip>
+                    <![CDATA[退出Lingou音乐播放器]]>
+                </ToolTip>
+                <MaskImage maskColor="#FF00FF" maskOut="0">images/btnclosemsg_0_0.bmp</MaskImage>
+            </Exit>
+            <ReloadSkin name="BtnReloadSkin" x="250" y="550" width="30" height="20" disable="0" hidden="1">                    
+                <Css>
+                    <![CDATA[
+                    #BtnReloadSkin
+                    {
+                        position:relative;
+                        top: 10px;
+                        
+                        /*right:-120px;width:200px;border: none;*/
+                        background-image:url(images/btn-play-hover.bmp);
+                    }
+                    #BtnReloadSkin:hover
+                    {
+                        /*border: none;*/
+                        background-image:url(images/btn-exit-hover.bmp);
+                    }
+                    #BtnReloadSkin:pressed
+                    {
+                        /*border: none;*/
+                        background-image:url(images/btn-exit-press.bmp);
+                    }
+                    ]]>
+                </Css>
+                <ToolTip>
+                    <![CDATA[reload skin]]>
+                </ToolTip>
+            </ReloadSkin>
+        </Buttons>
+        <Sliders>
+            <VolumSlider name="SldVolumSlider" x="225" y="92" width="66" height="13" disable="0" hidden="0" vertical="0">
+                <Css>
+                    <![CDATA[ 
+                     #SldVolumSlider::groove:horizontal {                        
+                         height: 10px; 
+                         margin: 2px 0;
+background-color: qlineargradient(x1: 0, y1: 0, x2: 0.5, y2: 0.5,
+                                                         stop: 0  #D7EEFD,stop: 0.5 #CDE8FC, stop: 1 #BDDDFB);
+                     }
+
+                     #SldVolumSlider::handle:horizontal {
+                         border: 1px solid #ffeeee;
+                         width: 9px;
+                         margin: -2px 0; /* handle is placed by default on the contents rect of the groove. Expand outside the groove */
+                         border-radius: 3px;
+background-image:url(images/btnVolumeSlider_0_0.bmp);
+                     }
+                     #SldVolumSlider::handle:horizontal:hover {
+                         border: 1px solid #eeeeee;
+                         width: 9px;
+                         margin: -2px 0; /* handle is placed by default on the contents rect of the groove. Expand outside the groove */
+                         border-radius: 3px;
+background-image:url(images/btnVolumeSlider_1_0.bmp);
+                     }
+                     #SldVolumSlider::handle:horizontal:pressed {
+                         border: 1px solid white;
+                         width: 9px;
+                         margin: -2px 0; /* handle is placed by default on the contents rect of the groove. Expand outside the groove */
+                         border-radius: 3px;
+background-image:url(images/btnVolumeSlider_2_0.bmp);
+                     }
+                     
+                     #SldVolumSlider::add-page:horizontal {
+                         
+                     }
+
+                     #SldVolumSlider::sub-page:horizontal {
+                         background-color: qlineargradient(x1: 0, y1: 0.2, x2: 0.5, y2: 0.7,
+                                                         stop: 0  #555555,stop: 0.5 #44aa11, stop: 1 #ffc76c);
+                        height: 6px; 
+                         margin: 2px 0;
+                     }
+ 
+                    ]]>
+                </Css>
+                <ToolTip>
+                    <![CDATA[调节音量]]>
+                </ToolTip>
+            </VolumSlider>   
+            <ProcessSlider name="SldProcessSlider" x="6" y="77" width="288" height="11" disable="0" hidden="0" vertical="0">
+                <Css>
+                    <![CDATA[ 
+                     #SldProcessSlider::groove:horizontal {                        
+                         height: 6px; 
+                         margin: 2px 0;
+background-color: qlineargradient(x1: 0, y1: 0, x2: 0.5, y2: 0.5,
+                                                         stop: 0  #D7EEFD,stop: 0.5 #CDE8FC, stop: 1 #BDDDFB);
+                     }
+
+                     #SldProcessSlider::handle:horizontal {
+                         border: 1px solid #ffeeee;
+                         width: 13px;
+                         margin: -2px 0; /* handle is placed by default on the contents rect of the groove. Expand outside the groove */
+                         border-radius: 3px;
+background-image:url(images/btnSlider_0_0.bmp);
+                     }
+                     #SldProcessSlider::handle:horizontal:hover {
+                         border: 1px solid #eeeeee;
+                         width: 13px;
+                         margin: -2px 0; /* handle is placed by default on the contents rect of the groove. Expand outside the groove */
+                         border-radius: 3px;
+background-image:url(images/btnSlider_1_0.bmp);
+                     }
+                     #SldProcessSlider::handle:horizontal:pressed {
+                         border: 1px solid white;
+                         width: 13px;
+                         margin: -2px 0; /* handle is placed by default on the contents rect of the groove. Expand outside the groove */
+                         border-radius: 3px;
+background-image:url(images/btnSlider_2_0.bmp);
+                     }
+                     
+                     #SldProcessSlider::add-page:horizontal {
+                         
+                     }
+
+                     #SldProcessSlider::sub-page:horizontal {
+                         background-color: qlineargradient(x1: 0, y1: 0.2, x2: 0.5, y2: 0.7,
+                                                         stop: 0  #555555,stop: 0.5 #44aa11, stop: 1 #ffc76c);
+                        height: 6px; 
+                         margin: 2px 0;
+                     }
+                    ]]>
+                </Css>
+                <ToolTip>
+                    <![CDATA[播放进度条]]>
+                </ToolTip>
+            </ProcessSlider>                         
+        </Sliders>  
+        <Labels>
+            <Number name="LabNumber" x="210" y="31" width="80" height="16" hidden="0">
+                <Css>
+                <![CDATA[
+                    #LabNumber {
+                        border: 0px solid green;
+                        color:#F6bb55;
+                        font-size:16px;
+font-family:Bradley Hand ITC;
+                    }
+                ]]>
+                </Css>
+            </Number>
+            <PlayInfo name="LabPlayInfo" x="60" y="30" width="150" height="35" hidden="0">
+                <Css>
+                <![CDATA[
+                    #LabPlayInfo {
+                        border-bottom: 1px dashed white;
+                        border-top: 0px;
+                        font: 13px;
+                        font-family:Bradley Hand ITC;
+                        color:#ffeeee;
+                    }
+                 ]]>
+                </Css>
+            </PlayInfo>
+            <UserName name="LabUserName" x="200" y="55" width="90" height="15" hidden="0">
+                <Css>
+                <![CDATA[
+                    #LabUserName {
+                        border: 0px solid green;
+                    }
+                ]]>
+                </Css>
+            </UserName>
+            <ShowInfo name="LabShowInfo" x="5" y="550" width="200" height="20" hidden="1">
+                <Css>
+                <![CDATA[
+                    #LabShowInfo {
+                        border: 1px dotted red;
+                    }
+                ]]>
+                </Css>
+            </ShowInfo>
+        </Labels>
+        
+        <Tabs>
+            <PlayList name="TabPlayList" x="5" y="150" width="289" height="350" hidden="0">
+                <Css>
+                <![CDATA[
+                     #TabPlayList::pane { 
+                         border-top: 0px solid #C2C7CB;
+                         position: absolute;
+                        /* top: -0.5em;*/
+                     }
+
+                     #TabPlayList::tab-bar {
+                         alignment: center;
+                     }
+
+                     QTabWidget::pane { /* The tab widget frame */
+                         border-top: 2px solid #C2C7CB;
+                         position: absolute;
+                         top: -0.5em;
+                     }
+
+                     QTabWidget::tab-bar {
+                         alignment: center;
+                     }
+
+                     /* Style the tab using the tab sub-control. Note that
+                         it reads QTabBar _not_ QTabWidget */
+                     QTabBar::tab {
+                         background-color: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,stop: 0  #EFEFEF,stop: 0.4 #F5F5F5,stop: 0.5 #F6F6F6, stop: 1 #FcFcFc);
+                         border: 2px solid #d4C4C3;
+                         border-bottom-color: #d2C7CB; /* same as the pane color */
+                         border-bottom-left-radius: 10px;
+                         border-top-right-radius: 10px;
+                         min-width: 12ex;
+                         padding: 3px;
+                     }
+
+                     
+                ]]>
+                </Css>                
+            </PlayList>            
+        </Tabs>
+        
+        <Tables>
+            <PlayList name="TablePlayList" x="4" y="216" width="279" height="290" hidden="0">
+                    <Css>
+                    <![CDATA[
+                         #TablePlayList { /* The tab widget frame */
+                             border: 2px solid #C2C7CB;
+                             background-color:#EBF3FE;
+                             color:#4C618F;
+                             selection-color: white;
+                            alternate-background-color: #ffffff;
+                            gridline-color: #ffffff;
+                            selection-background-color: qlineargradient(x1: 0, y1: 0, x2: 0.5, y2: 0.5,
+                                                         stop: 0  #D7EEFD,stop: 0.5 #CDE8FC, stop: 1 #BDDDFB);
+                         }
+                        #TablePlayList QTableCornerButton::section {
+                             background-color: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,stop: 0  #EFEFEF,stop: 0.4 #F5F5F5,stop: 0.5 #F6F6F6, stop: 1 #FcFcFc);
+                            
+                            
+                        }
+                         #TablePlayList QHeaderView {
+                            background-color: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,stop: 0  #FcFcFc,stop: 0.5 #F6F6F6, stop: 1 #BDDDFB);                        
+                            border: 1px dashed red;
+                         }
+            
+                        
+                        #TablePlayList QHeaderView::section {
+                            
+                        }
+
+                    ]]>
+                    </Css>            
+            </PlayList>
+        </Tables>
+        
+        <Displays>
+            <Play name="DpPlayForm" x="36" y="60" width="300" height="586">
+                <Css>
+                <![CDATA[
+                    #DpPlayForm {                       
+                        background-image: url(images/bg.bmp);
+                    }
+                ]]>
+                </Css>
+                <MaskImage maskColor="#FF00FF" maskOut="0">images/bg.bmp</MaskImage>
+            </Play>
+            <Web name="DpWebForm" x="336" y="60" width="515" height="586">
+                <Css>
+                <![CDATA[
+                    #DpWebForm {                       
+                        background-image: url(images/webbg.bmp);
+                    }
+                ]]>
+                </Css>
+                <MaskImage maskColor="#FF00FF" maskOut="0">images/webbg.bmp</MaskImage>
+            </Web>            
+        </Displays>
+        
+    </Components>
+    
+</Skin>

@@ -1,0 +1,15 @@
+<RCC>
+    <qresource prefix="/" lang="chinese" >
+        <file>images/lingou_logo.png</file>
+        <file>images/lingou_logo_hover.png</file>
+        <file>images/lingou_logo_pressed.png</file>
+        <file>images/show_msg.png</file>
+        <file>images/menu_logo (6).png</file>
+        <file>images/menu_logo (0).png</file>
+        <file>images/menu_logo (1).png</file>
+        <file>images/menu_logo (2).png</file>
+        <file>images/menu_logo (3).png</file>
+        <file>images/menu_logo (4).png</file>
+        <file>images/menu_logo (5).png</file>
+    </qresource>
+</RCC>
